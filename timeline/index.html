@@ -1,0 +1,190 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoDAO Timeline</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
+<body>
+<div>
+    <style>
+        .dodao-timeline-container {
+            max-width: 650px;
+            margin: 50px auto;
+        }
+
+        p {
+            line-height: 1.5;
+            opacity: 0.8;
+        }
+
+        .dodao-timeline {
+            position: relative;
+            padding-left: 4rem;
+            margin: 0 0 0 30px;
+            color: white;
+        }
+
+        .dodao-timeline:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: #27293d;
+        }
+
+        .dodao-timeline .dodao-timeline-container {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .dodao-timeline .dodao-timeline-container .dodao-timeline-icon {
+            position: absolute;
+            left: -88px;
+            top: 4px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 2rem;
+            background: #4f537b;
+            margin-top: 30px;
+        }
+
+        .dodao-timeline .dodao-timeline-container .dodao-timeline-icon i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .dodao-timeline .dodao-timeline-container .dodao-timeline-icon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        .dodao-timeline .dodao-timeline-container .dodao-timeline-body {
+            background: #14122b;
+            border-radius: 20px;
+            padding: 24px 32px 8px 32px;
+            box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .dodao-timeline .dodao-timeline-container .dodao-timeline-body:before {
+            content: "";
+            background: inherit;
+            width: 30px;
+            height: 30px;
+            display: block;
+            position: absolute;
+            margin-top: 25px;
+            left: -15px;
+            transform: rotate(45deg);
+            border-radius: 0 0 0 2px;
+        }
+
+        .dodao-timeline .dodao-timeline-container .dodao-timeline-body .dodao-timeline-title {
+            margin-bottom: 2rem;
+        }
+
+        .dodao-timeline .dodao-timeline-container .dodao-timeline-body .dodao-timeline-title .badge {
+            background: #4f537b;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .dodao-timeline .dodao-timeline-container .dodao-timeline-body .dodao-timeline-subtitle {
+            font-weight: 300;
+            opacity: 0.4;
+            font-size: 0.7rem;
+        }
+
+        .dodao-timeline .dodao-timeline-container.primary .badge,
+        .dodao-timeline .dodao-timeline-container.primary .dodao-timeline-icon {
+            background: #1d8cf8 !important;
+        }
+
+        .dodao-timeline .dodao-timeline-container.info .badge,
+        .dodao-timeline .dodao-timeline-container.info .dodao-timeline-icon {
+            background: #11cdef !important;
+        }
+
+        .dodao-timeline .dodao-timeline-container.success .badge,
+        .dodao-timeline .dodao-timeline-container.success .dodao-timeline-icon {
+            background: #00bf9a !important;
+        }
+
+        .dodao-timeline .dodao-timeline-container.warning .badge,
+        .dodao-timeline .dodao-timeline-container.warning .dodao-timeline-icon {
+            background: #ff8d72 !important;
+        }
+
+        .dodao-timeline .dodao-timeline-container.danger .badge,
+        .dodao-timeline .dodao-timeline-container.danger .dodao-timeline-icon {
+            background: #fd5d93 !important;
+        }
+    </style>
+    <div class="dodao-timeline-container">
+        <div class="dodao-timeline">
+            <div class="dodao-timeline-container primary">
+                <div class="dodao-timeline-icon">
+                    <i class="far fa-grin-wink"></i>
+                </div>
+                <div class="dodao-timeline-body">
+                    <h4 class="dodao-timeline-title"><span class="badge">Conceive</span></h4>
+                    <p>I became too excited about DAOs when I read about them and wanted to keep reading about them.
+                        After reading about them for a few hours, I was not able to find detailed knowledge like
+                        "How to create a DAOs", "Execution model", "Financial Model", "Success Factors" etc.
+                    </p>
+                    <p class="dodao-timeline-subtitle">Early November, 2021 </p>
+                </div>
+            </div>
+            <div class="dodao-timeline-container danger">
+                <div class="dodao-timeline-icon">
+                    <i class="far fa-grin-hearts"></i>
+                </div>
+                <div class="dodao-timeline-body">
+                    <h4 class="dodao-timeline-title"><span class="badge">Birth</span></h4>
+                    <p>I wanted to do a project in DAO Global Hackathon, but for me to come up with a relevant idea, I
+                        had to know what all already exists. This led the birth of <a
+                                href="https://dodao.io">DoDAO.io</a>.
+                        DoDAO aims to be the Wikipedia for Decentralized Autonomous Organizations. It will contain all
+                        the information needed for creating and operating DAOs
+                    </p>
+                    <p class="dodao-timeline-subtitle">November 15, 2021</p>
+                </div>
+            </div>
+            <div class="dodao-timeline-container success">
+                <div class="dodao-timeline-icon">
+                    <i class="far fa-grin-tears"></i>
+                </div>
+                <div class="dodao-timeline-body">
+                    <h4 class="dodao-timeline-title"><span class="badge">First Step</span></h4>
+                    <p>Step one for us is to capture information about top DAO Frameworks or Products that can be used for
+                        creating a new DAO. As part of this step, we also want to capture information about the top ten DAOs
+                    </p>
+                    <p class="dodao-timeline-subtitle">December 25, 2021</p>
+                </div>
+            </div>
+
+
+            <div class="dodao-timeline-container info">
+                <div class="dodao-timeline-icon">
+                    <i class="far fa-grin"></i>
+                </div>
+                <div class="dodao-timeline-body">
+                    <h4 class="dodao-timeline-title"><span class="badge">Second Step</span></h4>
+                    <p>Second step for us will be to start a podcast and share the information first hand from the creator of the DAO
+                        Frameworks and DAOs.</p>
+                    <p class="dodao-timeline-subtitle">January 15, 2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
